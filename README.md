@@ -1,5 +1,5 @@
 # 震度分布繪圖
-以[測站震度輸出程式](https://github.com/chemars/Seismic-Intensity-Output)為基礎，使用 [CIT_calculate.m](https://github.com/chemars/Seismic-Intensity-Output/blob/master/CIT_calculate.m) 輸出的檔案繪製震度分布圖。
+以[測站震度輸出程式](https://github.com/chemars/Seismic-Intensity-Output)為基礎，讀取 [CIT_calculate.m](https://github.com/chemars/Seismic-Intensity-Output/blob/master/CIT_calculate.m) 輸出的檔案繪製震度分布圖。
 
 ## 使用軟體
 [Generic Mapping Tools](https://www.generic-mapping-tools.org/) 6.0.0
