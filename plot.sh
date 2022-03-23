@@ -27,7 +27,7 @@ echo 119.15 21.15 "Intensity scale: JMA" | gmt text -F+f10p,,black+jML
 gmt figure FJEA png A+m1c
 gmt basemap -Jm3c -R119/123/21/26 -Ba1 -B+t"Intensity Map"
 gmt coast -Df -W0.3p
-gawk 'BEGIN {FS=","}; {if (NR > 1 && $9 <= 5) print $3, $4, $9}' $data | gmt text -F+f12p,,blue+jMC
-gawk 'BEGIN {FS=","}; {if (NR > 1 && $9 >= 6) print $3, $4, $9}' $data | gmt text -F+f12p,,red+jMC
+gawk 'BEGIN {FS=","}; {if (NR > 1 && $9 <= 6) print $3, $4, $9}' $data | gmt text -F+f12p,,blue+jMC
+gawk 'BEGIN {FS=","}; {if (NR > 1 && $9 >= 7) print $3, $4, $9}' $data | gmt text -F+f12p,,red+jMC
 echo 119.15 21.15 "Intensity scale: FJEA" | gmt text -F+f10p,,black+jML
 gmt end
